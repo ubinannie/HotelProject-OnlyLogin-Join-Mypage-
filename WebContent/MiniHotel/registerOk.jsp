@@ -1,0 +1,77 @@
+<%@page import="vo.Member_Vo"%>
+<%@page import="dao.Member_Dao"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+	<meta name="author" content="hotel">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+
+    <!-- css 적용 : reset.css는 먼저 초기화하여야하기때문에 먼저 호출 -->
+   <link rel="stylesheet" href="http://localhost:9090/login_ubin/MiniHotel/css/reset.css">
+   <link rel="stylesheet" href="http://localhost:9090/login_ubin/MiniHotel/css/LoginMain.css">
+    
+<title>registerOk.jsp</title>
+</head>
+<body>
+<jsp:useBean id="minihotel" class="vo.Member_Vo" scope="page"/>
+<jsp:setProperty property="*" name="minihotel"/>
+
+	 <div class="body__container">
+
+        <!--HEADER-->
+        <header class="section">
+            <div class="inner clearfix">
+
+                <div class="menu-group float--left">
+                    <div class="logo">
+                        <a href="index.html">여기어때</a>
+                    </div>
+                </div>
+
+                <div class="sign-group float--right toggle">
+                    
+                    <form id="search-form" method="post" action="">
+                        <input id="search" class="input--text" type="text" placeholder="지역,숙소명">
+                        <input type="submit">
+                    </form>
+                   
+                    <ul class="navi">
+                        <li><a href="#">예약내역</a></li>
+                        <li><a href="#">더보기</a>
+                            <ul>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">자주묻는질문</a></li>
+                                <li><a href="#">1:1문의사항</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="login">${member.nickname }님 마이페이지</a>
+                        	<ul>
+                                <li><a href="#">${member.nickname } 님</a></li>
+                                <li><a href="myPage.do">내정보관리</a></li>
+                                <li><a href="#">예약내역</a></li>
+                                <li><a href="logout.do">로그아웃</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                
+                </div>
+            </div>
+        </header>
+        
+</body>
+</html>
+
+
+
+
+
+
+
+
