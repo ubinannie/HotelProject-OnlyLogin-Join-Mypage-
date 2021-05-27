@@ -1,5 +1,7 @@
 호텔중개플랫폼
 
+<MVC1 -> MVC2 로 바꾼 코드>
+
 프로젝트 기간 :
 - 2021년 02월 16일 ~ 2021년 03월 01일
 - 약 2주간 진행
@@ -16,3 +18,6 @@
 - 윤종흠 : 결제페이지
 - 김성수 : 더보기 (공지사항 / 자주묻는 질문 / 1:1문의) / css (상단바 / 메인페이지) / 페이지 결합
 - 김지영 : 후기 / 댓글
+
+- PPT -> ISSUES에 첨부
+- https://github.com/ubinannie/HotelProject-OnlyLogin-Join-Mypage-/issues/new
